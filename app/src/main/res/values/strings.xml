@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application.Projet2</string>
+    <string name="menu_date">Date</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_search">Recherche</string>
+
+</resources>

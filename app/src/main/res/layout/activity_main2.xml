@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="org.esiea.chandrakumaran_elbahloul.myapplicationprojet.Main2Activity">
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/Qsuivante" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_aide"
+        android:text="Indice"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Question 1 : Peter Pan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textStyle="bold|italic"
+        android:textSize="18sp"
+        android:fontFamily="serif"
+        android:layout_alignBaseline="@+id/button_aide"
+        android:layout_alignBottom="@+id/button_aide"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Quel est le prénom de la fille aînée des Darling ?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Q1"
+        android:fontFamily="serif"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/button_aide"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Réponse"
+        android:ems="10"
+        android:layout_marginTop="14dp"
+        android:id="@+id/R1"
+        android:fontFamily="serif"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/Q1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:textColor="?android:attr/colorControlNormal" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Qsuivante"
+        android:onClick="next"
+        android:text="Suivant"
+        android:layout_below="@+id/R1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
